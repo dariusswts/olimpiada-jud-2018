@@ -25,7 +25,7 @@ namespace eLearningMareaUnire1918
 
         private void Start_Load(object sender, EventArgs e)
         {
-            lblDescriere.Text = "CE MAI FACI";
+            
 
         }
 
@@ -36,6 +36,21 @@ namespace eLearningMareaUnire1918
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string email=txtEmail.Text;
+            string parola=txtParola.Text;
+
+            if (email == "elev@gmail.com" && parola == "12345")
+            {
+                eLearning1918_Elev f=new eLearning1918_Elev();
+                f.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Eroare de autentificare!");
+                txtEmail.Clear();
+                txtParola.Clear();
+            }
 
         }
     }

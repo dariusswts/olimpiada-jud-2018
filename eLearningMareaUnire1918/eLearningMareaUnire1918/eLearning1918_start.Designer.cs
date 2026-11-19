@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.btnInregistrare = new System.Windows.Forms.Button();
             this.btnIesire = new System.Windows.Forms.Button();
             this.btnInainte = new System.Windows.Forms.Button();
             this.btnInapoi = new System.Windows.Forms.Button();
@@ -43,7 +42,9 @@
             this.txtParola = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblParola = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitul
@@ -94,18 +95,9 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnInregistrare
-            // 
-            this.btnInregistrare.Location = new System.Drawing.Point(632, 392);
-            this.btnInregistrare.Name = "btnInregistrare";
-            this.btnInregistrare.Size = new System.Drawing.Size(75, 23);
-            this.btnInregistrare.TabIndex = 5;
-            this.btnInregistrare.Text = "Inregistrare";
-            this.btnInregistrare.UseVisualStyleBackColor = true;
-            // 
             // btnIesire
             // 
-            this.btnIesire.Location = new System.Drawing.Point(713, 392);
+            this.btnIesire.Location = new System.Drawing.Point(713, 415);
             this.btnIesire.Name = "btnIesire";
             this.btnIesire.Size = new System.Drawing.Size(75, 23);
             this.btnIesire.TabIndex = 6;
@@ -174,11 +166,22 @@
             this.lblParola.TabIndex = 13;
             this.lblParola.Text = "Parola";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(556, 234);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(190, 129);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
             // Start
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblParola);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtParola);
@@ -187,7 +190,6 @@
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.btnInainte);
             this.Controls.Add(this.btnIesire);
-            this.Controls.Add(this.btnInregistrare);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox1);
@@ -197,6 +199,7 @@
             this.Text = "StartForm";
             this.Load += new System.EventHandler(this.Start_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +212,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnInregistrare;
         private System.Windows.Forms.Button btnIesire;
         private System.Windows.Forms.Button btnInainte;
         private System.Windows.Forms.Button btnInapoi;
@@ -218,6 +220,7 @@
         private System.Windows.Forms.TextBox txtParola;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblParola;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
